@@ -13,3 +13,13 @@ var wow = new WOW(
     }
   );
   wow.init();
+
+//   Плавный скроллинг
+
+let arrowLink = $("#nav_link").click(function () {
+    let _href = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(_href).offset().top + "px"
+    });
+    return false;
+});

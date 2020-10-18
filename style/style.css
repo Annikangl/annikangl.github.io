@@ -129,6 +129,7 @@ p {
     padding: 14px 40px;
     border-radius: 2px;
     transition: background .1s linear;
+    animation: 2s btn-animate;
 }
 
 .btn--red {
@@ -139,6 +140,18 @@ p {
     background-color: #bd2e2e;
 }
 
+
+@keyframes btn-animate {
+    0% {
+        margin-bottom: 0;
+    }
+    50% {
+        margin-bottom: 100px;
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}
 /* Features
 ================= */
 
