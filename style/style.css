@@ -63,15 +63,17 @@ body {
     background: url("../img/pass.png") 4px no-repeat;
 }
 
+
 #login:focus,
-#pass:focus {
+#pass:focus,
+#login:not(:placeholder-shown),
+#pass:not(:placeholder-shown) {
     background: none;
 }
 
 .form__input:focus {
     box-shadow: 0px 0px 12px #24388671;
 }
-
 
 .pass__reset:hover {
     text-decoration: underline;
